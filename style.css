@@ -576,8 +576,25 @@ textarea {
 }
 
 .skill-card {
-    min-height: 280px;
+    min-height: 260px;
     padding: 30px;
+}
+
+.skill-card-featured {
+    background: var(--ink);
+    color: var(--text);
+    grid-column: span 2;
+}
+
+.skill-card-featured .skill-icon {
+    background: var(--accent);
+    color: var(--ink);
+}
+
+.skill-card-featured .tag-list span {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--line);
+    color: var(--text);
 }
 
 .skill-icon {
@@ -921,6 +938,10 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+    .skill-card-featured {
+        grid-column: span 1;
+    }
+
     .project-card,
     .project-card.featured {
         grid-column: span 1;
@@ -983,6 +1004,15 @@ textarea {
     .contact-form,
     .mini-card {
         padding: 22px;
+    }
+
+    .tag-list {
+        gap: 8px;
+    }
+
+    .tag-list span {
+        font-size: 0.82rem;
+        padding: 7px 8px;
     }
 
     .footer-content {
