@@ -5,611 +5,533 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Neelesh</title>
+    <meta name="description"
+        content="Neelesh Meena is a Tech Lead and Full-Stack Software Engineer building React, Next.js, TypeScript, AI, SEO, and API-driven web products.">
+    <meta name="theme-color" content="#0a0b0f">
+    <meta property="og:title" content="Neelesh Meena | Tech Lead and Full-Stack Software Engineer">
+    <meta property="og:description"
+        content="Portfolio of Neelesh Meena, IIT (ISM) Dhanbad graduate with 3+ years of experience across AI, privacy, travel-tech, email marketing, finance, and marketplaces.">
+    <meta property="og:image" content="images/background.png">
+    <title>Neelesh Meena | Tech Lead and Full-Stack Software Engineer</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
-    <script src="https://kit.fontawesome.com/ecae0631ae.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 <body>
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Neelesh Meena home">
+            <span class="brand-mark">NM</span>
+            <span>Neelesh Meena</span>
+        </a>
 
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h1>NEELESH</h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home </a></li>
-                    <li><a href="#about">About </a></li>
-                    <li><a href="#services">My Services </a></li>
-                    <li><a href="#portfolio">My Work </a></li>
-                    <li><a href="#contact">Contact </a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
 
-            <!-- Social Icons Links abd icons-->
-            <div class="wrapper">
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-                <div class="icon linkedin"><a href="https://www.linkedin.com/in/neelesh-meena-73b07b1a0/"
-                        target="_blank">
-                        <div class="tooltip">Linkedin</div>
-                        <span> <i class="fab fa-linkedin-in" href="https://www.linkedin.com/in/neelesh-meena-73b07b1a0/"
-                                target="_blank"></i></span>
-                    </a>
-                </div>
-
-                <div class="icon github"><a href="https://github.com/DamriaNeelesh?tab=repositories" target="_blank">
-                        <div class="tooltip">Github</div>
-                        <span><i class="fab fa-github"></i></span>
-                    </a>
-                </div>
-
-                <div class="icon facebook"><a href="https://www.facebook.com/neelesh.meena.94043" target="_blank">
-                        <div class="tooltip">Facebook</div>
-                        <span><i class="fab fa-facebook-f"></i></span>
-                    </a>
-                </div>
-
-                <div class="icon twitter"><a href="https://twitter.com/Neelesh04026364" target="_blank">
-                        <div class="tooltip">Twitter </div>
-                        <span><i class="fab fa-twitter"></i></span>
-                    </a>
-                </div>
-
-                <div class="icon whatsapp"><a href="https://wa.me/+917023488011" target="_blank">
-                        <div class="tooltip">Whatsapp</div>
-                        <span> <i class="fab fa-whatsapp"></i></span>
-                    </a>
-                </div>
-            </div>
-            <!--  -->
-
-            <div class="header-text">
-                Welcome to My Portfolio
-                <h1>
-                    <a href="" class="typewrite" data-period="2000"
-                        data-type='[ "Hi, I am Neelesh.", "I am a Front End Developer.", "I Love to Design.", "I Love to Develop." ]'>
-                        <span class="wrap"></span>
-                    </a>
-                </h1>
-            </div>
-            <div class="myData">
-                <a href="images/my-cv.pdf" class="btn btn2" download><span>Download CV</span></a>
-                <a href="#contact" class="btn btn2"><span>Hire Me</span></a>
-            </div>
-        </div>
-    </div>
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>My name is Neelesh Meena. I am from Kota, Rajasthan, India.<br>
-                        I am pursuing bachelor of technology in Environmental Engineering at IIT ISM Dhanbad.<br>
-                        <br>
-                        You might be wondering that being from a core field background turned into a web developer ?
-                        <br><br>
-                        I tried to give web development a shot, during the pandemic.I decided to try creating simple
-                        html page — turns out to be boom for me and taught
-                        me a lot about HTML & CSS and then my journey started, Slowly snd steadily, I found it
-                        interesting to design and develop fast and performant websites.
-                        <br>
-                        I am a front end web developer, I can provide clean code and perfect design also I can make
-                        website more interactive and responsive with my animations & Designing skills.<br>
-                        A responsive design makes your website accessible to all users regardless of their devices.<br>
-                        <br>
-
+    <main>
+        <section class="hero section-dark" aria-label="Intro">
+            <div class="hero-overlay"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Tech Lead / Lead Engineer / Full-Stack Software Engineer</p>
+                    <h1>Neelesh Meena</h1>
+                    <p class="hero-lede">
+                        I build product-grade React, Next.js and TypeScript experiences across AI/privacy, investment
+                        tech, travel-tech, email marketing, finance, and marketplace products.
                     </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
-                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
-                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
-                        <p class="tab-links" onclick="opentab('projects')"><b>Projects</b></p>
+
+                    <div class="hero-meta" role="group" aria-label="Profile highlights">
+                        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Kota, Rajasthan, India</span>
+                        <span><i class="fa-solid fa-briefcase" aria-hidden="true"></i>3+ years professional experience</span>
+                        <span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>IIT (ISM) Dhanbad</span>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Developer</span><br>HTML, CSS, JavaScript, DOM, AJAX</li>
-                            <li><span>Frontend Developer</span><br>CSS, Bootstrap, UI, Chart.js</li>
-                            <li><span>Angular Framework</span><br>Typescript, SCSS, Material, API Integration, Firebase
-                                & Okta, JSON</li>
-                            <li><span>Programming Tools</span><br>C, C++, Pyhton, Git, OOPs, Javascript, Github</li>
-                        </ul>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary"
+                            href="https://drive.google.com/uc?export=download&id=1eXek2VdbyVB7iNBrR4iYU_LT7NO3hDw6"
+                            target="_blank" rel="noopener">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i>
+                            Download Resume
+                        </a>
+                        <a class="button button-secondary" href="mailto:damrianeelesh@gmail.com">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            Email Me
+                        </a>
+                        <a class="button button-ghost" href="https://github.com/DamriaNeelesh" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            GitHub
+                        </a>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span><b>Software Developer &nbsp;</b>Mailmodo,Banglore</span><br>
-                                ❖ Working as a full stack developer along with the email Journey Preview.
-                                ❖ Worked on MM-Admin application for organizing data and tracking developers campaign
-                                ❖ Interactive user experience and oraginizing API data on Frontend 
-                                ❖ Tech Stack - Next.js, Cosmo db, Reactjs, Nodejs, Material UI
-                            </li>
-                            <li><span><b>Software Developer &nbsp;</b>Yahshua,Philipines</span><br>
-                                ❖ Worked on Front end built HRIS System - Login and Authentication
-                                ❖ Worked on Figma design along for job posting platform and also made additional features like setup company profile and Job preview.
-                                ❖ Built various front template using Next Js and Redux
-                                ❖ Tech Stack - Next js, Redux, Nodejs, Material UI,Figma
-                            </li>
-                            <li><span><b>Web Developer &nbsp;</b>Student Gymkhana,IIT(ISM) Dhanbad</span><br>
-                                ❖ Worked in a team Web project with admin portal & college user portal.<br>
-                                ❖ Built APIs for taking votes, making notices, displaying results etc.<br>
-                                ❖ Tech Stack Used: Angular,JS,CSS3
-                            </li>
-                            <li><span><b>Frontend Developer &nbsp;</b>Stargate Inc. (StartUp)</span><br>
-                                ❖ Implemented Bootstrap-CSS, JavaScript and integrated them with Ajax to develop an
-                                interactive and responsive web design.<br>
-                                ❖ CRUD operation implementation on website as per the customer need.<br>
-                                ❖ Tech Stack Used: Angular,TS,SCSS,Postman API,JS,Material
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Indian Institute of Technology(ISM) Dhanbad &nbsp;</span>B.Tech <br>(2019-23)
-                                ENVIRONMENTAL ENGINEERING</li>
-                            <li><span>Nalanda Academy &nbsp;</span> <br>12th April 2017 - April 2019 </li>
-                            <li><span>Sir Padampat Singhania School &nbsp;</span><br>10th April 2015 - April 2016 </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="projects">
-                        <ul>
-                            <li><span>E-Commerce Shopping Website</span></li>
-                            <li><span>Spotify Music Web App</span></li>
-                            <li><span>Customer Tracking System (CRUD)</span></li>
-                            <li><span>Sorting Visualizer</span></li>
-                            <li><span>Chat Application</span></li>
-                            <li><span>Social Medial App</span></li>
-                            <li><span>Github Profile Finder</span></li>
-                            <li><span>Alarm Clock</span></li>
-                            <li><span>Music Band Application</span></li>
-                        </ul>
+
+                    <div class="hero-stats" role="group" aria-label="Portfolio snapshot">
+                        <div>
+                            <strong>8+</strong>
+                            <span>Production products</span>
+                        </div>
+                        <div>
+                            <strong>4K</strong>
+                            <span>LinkedIn followers</span>
+                        </div>
+                        <div>
+                            <strong>200+</strong>
+                            <span>DSA problems</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Skills section starts here -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My Skills</h2>
-            <div class="skills-content">
-                <div class="column-left" style="padding: 15px; display: flex;">
-                    <div class="column-right" style="flex-basis: 50%;">
-                        <p>HTML</p>
-                        <div class="containers">
-                            <div class="skills html">95%</div>
-                        </div>
-                        <p>CSS</p>
-                        <div class="containers">
-                            <div class="skills css">85%</div>
-                        </div>
-                        <p>Javascript</p>
-                        <div class="containers">
-                            <div class="skills js">80%</div>
-                        </div>
-                        <p>Typescript</p>
-                        <div class="containers">
-                            <div class="skills ts">75%</div>
-                        </div>
-                        <p>Bootstrap</p>
-                        <div class="containers">
-                            <div class="skills btr">60%</div>
-                        </div>
-                        <p>Angular</p>
-                        <div class="containers">
-                            <div class="skills ang">70%</div>
-                        </div>
-                        <p>UI/UX</p>
-                        <div class="containers">
-                            <div class="skills ui">25%</div>
-                        </div>
-                    </div>
-
-                    <div class="chartBox" style="flex-basis: 50%;" onresize="responsiveFont()">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
-
+        <section class="proof-strip" aria-label="Core strengths">
+            <div class="container proof-grid">
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>AI Integrations</span>
+                <span>SEO</span>
+                <span>API Products</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="column-rright">
-        <h1>Expertise</h1>
-        <div class="expertise-container">
-            <div class="language">
-                <div class="expertise javascript">
-                    <h3>75%</h3>
+        <section class="section section-light" id="about">
+            <div class="container split-layout">
+                <div class="section-kicker reveal">
+                    <p class="eyebrow">About</p>
+                    <h2>Frontend polish, full-stack ownership, and product judgement.</h2>
+                    <figure class="about-portrait">
+                        <img src="images/user.png" alt="Neelesh Meena">
+                        <figcaption>
+                            Building production product surfaces across Hushh.ai and HushhTech.com.
+                        </figcaption>
+                    </figure>
                 </div>
-                <h2>JavaScript</h2>
-            </div>
-
-            <div class="language">
-                <div class="expertise python">
-                    <h3>80%</h3>
-                </div>
-                <h2>Python</h2>
-            </div>
-
-            <div class="language">
-                <div class="expertise C">
-                    <h3>95%</h3>
-                </div>
-                <h2>C/C++</h2>
-            </div>
-
-            <div class="language">
-                <div class="expertise java">
-                    <h3>40%</h3>
-                </div>
-                <h2>Java</h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="column-right-container">
-        <div class="images">
-            <img src="">
-            <img src="images/html.jpeg">
-            <img src="images/css.png">
-            <img src="images/js.png">
-            <img src="images/ts.png">
-            <img src="images/bootstrap.png">
-            <img src="images/angular.jpg">
-        </div>
-    </div>
-
-    <!-- My Services Section -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p> Every Website should be built with two primary goals. Firstly, it needs to work across all
-                        devices.
-                        Secondly, it needs to be fast as possible and My services fulfill both goals.
-                        I am always curious to learn more about new technologies and creative coding.
+                <div class="section-body reveal">
+                    <p>
+                        I am a full-stack software engineer and IIT (ISM) Dhanbad graduate with 3+ years of professional
+                        experience shipping React, Next.js, TypeScript, Angular, and API-driven products. My work spans
+                        AI and data-sovereignty, investment tech, travel-tech, email marketing, financial workflows, and
+                        marketplace domains.
                     </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h2>Web Design</h2>
-                    <p> Most important part after development is to attract customers & users.
-                        Fully responsive website using Bootstrap,CSS,SCSS,UI/UX.
-                        Creative animations and effects to enchance website in terms of look.
-                        Aim to provide the best user experience, which ultimately translates into conversions.
-
+                    <p>
+                        I care deeply about responsive UI architecture, clean implementation, SEO readiness, Core Web
+                        Vitals, debugging, secure integrations, and distributed engineering collaboration. I also work
+                        comfortably with modern AI-assisted development workflows, prompt engineering, and LLM product
+                        integration.
                     </p>
-                    <a href="#">Learn more</a>
+
+                    <div class="quick-facts" role="group" aria-label="Quick facts">
+                        <div>
+                            <span>Current role</span>
+                            <strong>Tech Lead at Hushh.ai / Lead Engineer at HushhTech.com</strong>
+                        </div>
+                        <div>
+                            <span>Focus</span>
+                            <strong>AI, privacy, fintech, UX quality</strong>
+                        </div>
+                        <div>
+                            <span>Degree</span>
+                            <strong>B.Tech, IIT (ISM) Dhanbad</strong>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-brands fa-angular"></i>
-                    <h2>Angular Developer</h2>
-                    <p>My favourite frameworks in terms of development.
-                        developing mobile and web-based apps via the Angular framework.
-                        Create high-performing, responsive, and interactive web applications.
-                        benefits of inbuilt library. Advance features of protecting projects.
+            </div>
+        </section>
+
+        <section class="section section-muted" id="experience">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Recent engineering work</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">Jan 2024 - Present</div>
+                        <div class="timeline-card">
+                            <div class="role-heading">
+                                <div>
+                                    <h3>Tech Lead / Lead Engineer / Full-Stack Software Engineer</h3>
+                                    <p>Hushh.ai + HushhTech.com - Kirkland, WA, Remote</p>
+                                </div>
+                                <span>AI / Data / Investment Tech</span>
+                            </div>
+                            <ul>
+                                <li>Lead development across Hushh.ai and HushhTech product surfaces, owning responsive
+                                    UI architecture, feature delivery, bug resolution, and UX quality.</li>
+                                <li>Ship production work for Agent KAI, brand onboarding, agent onboarding, MuleSoft
+                                    API integrations, and Plaid-powered financial flows.</li>
+                                <li>Improve SEO readiness by refining page structure, content hierarchy, metadata,
+                                    routing, and frontend implementation quality.</li>
+                                <li>Partner with product, design, developer docs, and engineering teams to translate
+                                    requirements into secure, scalable user experiences.</li>
+                            </ul>
+                            <div class="tech-stack">React.js, Next.js, TypeScript, Tailwind CSS, Chakra UI, Supabase,
+                                MongoDB, Prisma, Postman, SEO, AI Integrations</div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">Aug 2024 - Dec 2024</div>
+                        <div class="timeline-card">
+                            <div class="role-heading">
+                                <div>
+                                    <h3>Frontend Engineer, Freelance</h3>
+                                    <p>Zero3 Inc. - Tokyo, Japan, Remote</p>
+                                </div>
+                                <span>Product Onboarding</span>
+                            </div>
+                            <ul>
+                                <li>Delivered frontend features and production fixes across MASpider, Proful, and
+                                    Salesbond.</li>
+                                <li>Built onboarding flows covering first-time user journeys, form states, routing, and
+                                    UI validation.</li>
+                                <li>Created reusable React, Next.js, and TypeScript components to improve delivery speed
+                                    across products.</li>
+                            </ul>
+                            <div class="tech-stack">Next.js, React.js, TypeScript, Node.js</div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">Oct 2023 - Jan 2024</div>
+                        <div class="timeline-card">
+                            <div class="role-heading">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <p>Tryp.com - Denmark, Remote</p>
+                                </div>
+                                <span>Travel-Tech</span>
+                            </div>
+                            <ul>
+                                <li>Developed core web app features for a travel platform helping users discover
+                                    instant destinations and package options.</li>
+                                <li>Fixed frontend issues, improved responsive UI behavior, and integrated API data
+                                    flows in a Next.js stack.</li>
+                            </ul>
+                            <div class="tech-stack">Next.js, React.js, TypeScript</div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">Feb 2023 - Oct 2023</div>
+                        <div class="timeline-card">
+                            <div class="role-heading">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <p>Mailmodo - Bengaluru, India, Remote</p>
+                                </div>
+                                <span>Email Marketing</span>
+                            </div>
+                            <ul>
+                                <li>Built and maintained MM-Admin interfaces for internal data organization and
+                                    operational workflows.</li>
+                                <li>Worked with the Workflow and Experience team to resolve issues, ship frontend
+                                    features, and improve UX consistency.</li>
+                                <li>Supported Next.js, JavaScript, and Shopify modules with responsive UI updates and
+                                    cross-browser checks.</li>
+                            </ul>
+                            <div class="tech-stack">Next.js, React.js, JavaScript, Shopify</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark compact-section" aria-label="Additional experience">
+            <div class="container mini-grid">
+                <article class="mini-card reveal">
+                    <i class="fa-solid fa-building-user" aria-hidden="true"></i>
+                    <h3>Yahshua Payroll Solutions</h3>
+                    <p>Built HRIS and job-posting features from Figma designs with Next.js, Redux, and Node.js.</p>
+                </article>
+                <article class="mini-card reveal">
+                    <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+                    <h3>Student Gymkhana, IIT (ISM)</h3>
+                    <p>Built admin and user portals with APIs for voting, notices, and results.</p>
+                </article>
+                <article class="mini-card reveal">
+                    <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                    <h3>Achievements</h3>
+                    <p>Top 2% among IIT-JEE candidates. Sports Secretary and Cabinet Member at IIT (ISM) Dhanbad.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-light" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Technical stack</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                        <h3>Languages</h3>
+                        <div class="tag-list">
+                            <span>TypeScript</span>
+                            <span>JavaScript</span>
+                            <span>C++</span>
+                            <span>C</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div>
+                        <h3>Frontend</h3>
+                        <div class="tag-list">
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>Angular</span>
+                            <span>Tailwind CSS</span>
+                            <span>Chakra UI</span>
+                            <span>Shadcn UI</span>
+                            <span>Redux</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                        <h3>Backend and Data</h3>
+                        <div class="tag-list">
+                            <span>Node.js</span>
+                            <span>REST APIs</span>
+                            <span>Prisma</span>
+                            <span>Firebase</span>
+                            <span>Firestore</span>
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                            <span>Supabase</span>
+                            <span>Docker</span>
+                            <span>Postman</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+                        <h3>AI, Quality and Delivery</h3>
+                        <div class="tag-list">
+                            <span>LLM Product Integration</span>
+                            <span>Prompt Engineering</span>
+                            <span>Agentic Workflows</span>
+                            <span>CI/CD</span>
+                            <span>Git</span>
+                            <span>SEO</span>
+                            <span>Core Web Vitals</span>
+                            <span>Security Audit</span>
+                            <span>Optimization</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Selected work</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card featured reveal">
+                        <img src="images/work-1.webp" alt="E-commerce website preview">
+                        <div class="project-content">
+                            <span class="project-type">Angular / TypeScript / Node.js</span>
+                            <h3>E-Commerce Website</h3>
+                            <p>Fully responsive shopping experience with authentication, category browsing, fashion blog,
+                                product detail pages, checkout, billing, and order summary flows.</p>
+                            <a href="https://multikart-eshop-fhiq.vercel.app/" target="_blank" rel="noopener">
+                                View project
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/work-3.jpg" alt="Customer tracking system preview">
+                        <div class="project-content">
+                            <span class="project-type">Angular / Firebase / Bootstrap</span>
+                            <h3>Customer Tracking System</h3>
+                            <p>CRUD single-page app with user registration, task and customer management, and POST, GET,
+                                PUT, and DELETE workflows.</p>
+                            <a href="https://angular-crud-operation.vercel.app/" target="_blank" rel="noopener">
+                                View project
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/work-6.jpg" alt="GitHub finder app preview">
+                        <div class="project-content">
+                            <span class="project-type">React / Next.js / GitHub API</span>
+                            <h3>GitHub Finder</h3>
+                            <p>Responsive app for searching GitHub users and repositories, then presenting API data in a
+                                clean, scannable interface.</p>
+                            <a href="https://github-profile-finder-silk-eta.vercel.app/" target="_blank" rel="noopener">
+                                View project
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/work-4.png" alt="Sorting visualizer preview">
+                        <div class="project-content">
+                            <span class="project-type">JavaScript / Algorithms</span>
+                            <h3>Sorting Visualizer</h3>
+                            <p>Interactive algorithm visualizer with array sizing, sorting speed controls, and animated
+                                comparisons.</p>
+                            <a href="https://sorting-vizualizer.netlify.app/" target="_blank" rel="noopener">
+                                View project
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/work10.webp" alt="Shopping cart app preview">
+                        <div class="project-content">
+                            <span class="project-type">React / Commerce UI</span>
+                            <h3>Shopping Cart Website</h3>
+                            <p>SPA for browsing products, filtering by type, adding items to cart, and reviewing cart
+                                details.</p>
+                            <a href="https://add-to-cart-e-commerce-project.vercel.app/products" target="_blank"
+                                rel="noopener">
+                                View project
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let us build something sharp.</h2>
+                    <p>
+                        I am open to strong full-stack, frontend-heavy, and AI product engineering opportunities across
+                        remote-first teams.
                     </p>
-                    <a href="#">Learn more</a>
+
+                    <div class="contact-list">
+                        <a href="mailto:damrianeelesh@gmail.com">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            damrianeelesh@gmail.com
+                        </a>
+                        <a href="tel:+917023488011">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            +91&nbsp;7023488011
+                        </a>
+                        <a href="https://www.linkedin.com/in/neelesh-meena-73b07b1a0/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/DamriaNeelesh" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
 
+                <form class="contact-form reveal" action="https://formsubmit.co/damrianeelesh@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New portfolio inquiry for Neelesh Meena">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email"
+                        required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell me about the role or project"
+                        required></textarea>
+
+                    <button class="button button-primary" type="submit">
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        Send Message
+                    </button>
+                </form>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>Copyright <span id="year"></span> Neelesh Meena. Built for modern product teams.</p>
+            <a href="https://drive.google.com/file/d/1eXek2VdbyVB7iNBrR4iYU_LT7NO3hDw6/view?usp=sharing"
+                target="_blank" rel="noopener">View Resume</a>
         </div>
-    </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.webp">
-                    <div class="layer">
-                        <h3>E-Commerce Website</h3>
-                        <p>Allows user to buy clothing Items, user can manage their orders, login/logout,Fashion blog,
-                            Filtering of products, Add to cart, Checkout page, Order summary, Single product detail
-                            page, Fully Responsive</p>
-                        <a href="https://multikart-eshop-fhiq.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Spotify Music Web App</h3>
-                        <p>SPA, Fully responsive music application where user can play, pause, forward, backward
-                            according to their preferences, features like auto play , animations, song progress bar</p>
-                        <a href="https://spotify-music-web-application.vercel.app/"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.jpg">
-                    <div class="layer">
-                        <h3>Customer Tracking System</h3>
-                        <p>Front End CRUD application with the user interface of the application, user registration,
-                            designed and implemented api based on CRUD operation to perform add, update, delete, view
-                            tasks</p>
-                        <a href="https://angular-crud-operation.vercel.app/" target="_blank"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-4.png">
-                    <div class="layer">
-                        <h3>Sorting Visualizer</h3>
-                        <p>Web Application to help visualize all sorting algorithms user can change the size of array,
-                            speed of sorting Visualization, animation and type of sorting algorithm</p>
-                        <a href="https://sorting-vizualizer.netlify.app/"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-5.jpeg">
-                    <div class="layer">
-                        <h3>Chat Application</h3>
-                        <p>Real-time chat application, where user can chat and create a room of group for chat with the
-                            help of html, css, js, Socket.IO and Node.js.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-6.jpg">
-                    <div class="layer">
-                        <h3>Github Profile Finder</h3>
-                        <p>Single page application where user can find anyone's public github account and see thier
-                            respositiories as well as their profile</p>
-                        <a href="https://github-profile-finder-silk-eta.vercel.app/" target="_blank"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-7.jpg">
-                    <div class="layer">
-                        <h3>Instagram Clone- Social Media App</h3>
-                        <p>Fully responsive social media clone app using html, css, bootstrap and javascript</p>
-                        <a href="https://instagramm-clone.vercel.app/"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work10.webp">
-                    <div class="layer">
-                        <h3>Shopping Cart Website</h3>
-                        <p>Simple SPA for adding products to shopping cart and cart detail page . User can filter
-                            products according to type</p>
-                        <a href="https://add-to-cart-e-commerce-project.vercel.app/products"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-8.jpeg">
-                    <div class="layer">
-                        <h3>Alarm Clock</h3>
-                        <p>SPA where user can set alarm according date and time along with different time zone </p>
-                        <a href="https://alarm-clock-js.vercel.app/"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work11.webp">
-                    <div class="layer">
-                        <h3>Basic URL Image Downloader</h3>
-                        <p>SPA where user can dowload any public image or file using its URL </p>
-                        <a href="https://alarm-clock-js.vercel.app/"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/band.jpg">
-                    <div class="layer">
-                        <h3>Simple Music Band</h3>
-                        <p>SPA where user can play using the </p>
-                        <a href="https://alarm-clock-js.vercel.app/"><i
-                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-            </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
-
-    <!-- Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>damrianeelesh@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+91 7023488011</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-envelope"></i></a>
-                    </div>
-                    <a href="images/my-cv.pdf" class="btn btn2" download>Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copyright Fotter Section -->
-        <div class="copyright">
-            <p>Copyright @ Neelesh Meena <i class="fas fa-heart"></i> - Front end Developer </p>
-        </div>
-
-    </div>
-
-    <!--  -->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName('tab-contents');
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+    </footer>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1Qzoo1ThFiF2Je0mBjrc_gnKq75gyyxNg4pOIj8MaC6NIeqHn0UFTjFNEUepzKq4T/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navigation = document.querySelector(".site-nav");
+        const navLinks = document.querySelectorAll(".site-nav a");
+        const year = document.getElementById("year");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 1000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+        year.textContent = new Date().getFullYear();
 
-    <script>
-        var TxtType = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function () {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
-    </script>
-
-
-
-
-
-    <script>
-        const ctx = document.getElementById('myChart');
-
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Problem Solving', 'Bootstrap', 'AJAX', 'DOM', 'Github', 'OOPs', 'API Integration', 'JSON', 'ECMAScript'],
-                datasets: [{
-                    label: '% of knowledge',
-                    data: [75, 70, 80, 85, 70, 60, 65, 80, 75],
-                    borderWidth: 1,
-                }],
-            },
-            options: {
-                scales: {
-                    y: {
-                        ticks: {
-                            color: 'white'
-                        },
-                        beginAtZero: true
-                    },
-                    x: {
-                        ticks: {
-                            color: 'white',
-
-                        },
-                    }
-                }
-            },
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navigation.classList.toggle("is-open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
+                : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
         });
 
-    // function responsiveFont(){
-    //  if(window.outerWidth < 720)
-    //      Chart.defaults.font.size = 5;
-    // };
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                navigation.classList.remove("is-open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+            });
+        });
 
+        const reveals = document.querySelectorAll(".reveal");
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            reveals.forEach((item) => observer.observe(item));
+        } else {
+            reveals.forEach((item) => item.classList.add("is-visible"));
+        }
     </script>
-
-    <!-- TO change the color of Chart.js -->
-
-
-
 </body>
 
-</html>;
+</html>
