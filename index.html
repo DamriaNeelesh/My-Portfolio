@@ -1,717 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Neelesh Meena is a Tech Lead and Full-Stack Software Engineer building React, Next.js, TypeScript, AI, SEO, and API-driven web products.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0a0b0f">
-    <meta property="og:title" content="Neelesh Meena | Tech Lead and Full-Stack Software Engineer">
-    <meta property="og:description"
-        content="Portfolio of Neelesh Meena, IIT (ISM) Dhanbad graduate with 3+ years of experience across AI, privacy, travel-tech, email marketing, finance, and marketplaces.">
-    <meta property="og:image" content="images/background.png">
-    <title>Neelesh Meena | Tech Lead and Full-Stack Software Engineer</title>
+    <meta name="description" content="Neelesh Meena is a full-stack engineer building privacy-aware AI agents, workflow automation, and production web products.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Neelesh Meena — Full-Stack Engineer">
+    <meta property="og:description" content="Production-minded full-stack engineering across AI agents, workflow automation, onboarding, and web platforms.">
+    <meta property="og:image" content="images/user.png">
+    <meta property="og:url" content="https://my-portfolio-sepia-eta.vercel.app/">
+    <title>Neelesh Meena — Full-Stack Engineer</title>
+    <link rel="canonical" href="https://my-portfolio-sepia-eta.vercel.app/">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="site-header" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
         <a class="brand" href="#top" aria-label="Neelesh Meena home">
-            <span class="brand-mark">NM</span>
+            <span class="brand-mark" aria-hidden="true">NM</span>
             <span>Neelesh Meena</span>
         </a>
-
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
-            aria-controls="primary-navigation">
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
             <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
-
-        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
-            <a href="#about">About</a>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="#work">Selected work</a>
             <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#approach">Strengths</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero section-dark" aria-label="Intro">
-            <div class="hero-overlay"></div>
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-overlay" aria-hidden="true"></div>
             <div class="container hero-grid">
-                <div class="hero-copy reveal">
-                    <p class="eyebrow">Tech Lead / Lead Engineer / Full-Stack Software Engineer</p>
-                    <h1>Neelesh Meena</h1>
-                    <p class="hero-lede">
-                        I build product-grade React, Next.js and TypeScript experiences across AI/privacy, investment
-                        tech, travel-tech, email marketing, finance, and marketplace products.
-                    </p>
-
-                    <div class="hero-meta" role="group" aria-label="Profile highlights">
-                        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Kota, Rajasthan, India</span>
-                        <span><i class="fa-solid fa-briefcase" aria-hidden="true"></i>3+ years professional experience</span>
-                        <span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>IIT (ISM) Dhanbad</span>
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Tech Lead / Lead Engineer / Full-Stack Software Engineer</p>
+                    <h1 id="hero-title">I build software that gets <em>real work</em> done.</h1>
+                    <p class="hero-lede">I’m Neelesh — a product-minded engineer with 3.5 years of experience shipping AI-agent experiences, workflow automation, onboarding systems, and dependable web products.</p>
+                    <div class="hero-meta" aria-label="Core areas">
+                        <span><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Agent workflows</span>
+                        <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Privacy-aware products</span>
+                        <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Full-stack delivery</span>
                     </div>
-
                     <div class="hero-actions">
-                        <a class="button button-primary"
-                            href="https://drive.google.com/uc?export=download&id=1eXek2VdbyVB7iNBrR4iYU_LT7NO3hDw6"
-                            target="_blank" rel="noopener">
-                            <i class="fa-solid fa-download" aria-hidden="true"></i>
-                            Download Resume
-                        </a>
-                        <a class="button button-secondary" href="mailto:damrianeelesh@gmail.com">
-                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                            Email Me
-                        </a>
-                        <a class="button button-ghost" href="https://github.com/DamriaNeelesh" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            GitHub
-                        </a>
+                        <a class="button button-primary" href="#work">Explore selected work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                        <a class="button button-secondary" href="images/my-cv.pdf" target="_blank" rel="noopener">View resume <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </div>
+                    <div class="hero-socials" aria-label="External profiles">
+                        <a href="https://github.com/DamriaNeelesh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/neelesh-meena-73b07b1a0/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                        <a href="mailto:damrianeelesh@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Email</a>
+                    </div>
+                </div>
+                <aside class="hero-note" aria-label="Engineering impact highlights">
+                    <div class="note-topline"><span>IMPACT, IN PRACTICE</span><i class="fa-solid fa-arrow-up-right-dots" aria-hidden="true"></i></div>
+                    <div class="impact-stat"><strong>+40%</strong><span>investor onboarding completion</span></div>
+                    <div class="impact-stat"><strong>+35%</strong><span>Core Web Vitals on high-traffic web properties</span></div>
+                    <div class="impact-stat"><strong>−55%</strong><span>frontend bug-resolution time</span></div>
+                    <p>Measured outcomes from shipped product work; the case studies below explain the engineering behind them.</p>
+                </aside>
+            </div>
+            <div class="hero-bottomline"><span>India · Open to remote collaboration</span><span>Product engineering / AI systems / automation</span></div>
+        </section>
 
-                    <div class="hero-stats" role="group" aria-label="Portfolio snapshot">
-                        <div>
-                            <strong>8+</strong>
-                            <span>Production products</span>
-                        </div>
-                        <div>
-                            <strong>4K</strong>
-                            <span>LinkedIn followers</span>
-                        </div>
-                        <div>
-                            <strong>200+</strong>
-                            <span>DSA problems</span>
-                        </div>
-                    </div>
+        <section class="proof-strip" aria-label="Selected capabilities">
+            <div class="container proof-strip-inner">
+                <span>Next.js</span><span>React + TypeScript</span><span>Python + FastAPI</span><span>PostgreSQL</span><span>Agent-to-agent workflows</span><span>MuleSoft integrations</span>
+            </div>
+        </section>
+
+        <section class="section section-light intro-section" id="about">
+            <div class="container intro-grid">
+                <div>
+                    <p class="eyebrow eyebrow-dark">How I work</p>
+                    <h2>From ambiguous problem<br>to <span>production-ready product.</span></h2>
+                </div>
+                <div class="intro-copy">
+                    <p>I work across the seams between product, frontend, APIs, and integrations. That means shaping the interaction, connecting the systems behind it, then staying close to reliability, privacy, and the details that make it usable.</p>
+                    <p>My strongest recent work is in multi-agent product experiences and onboarding workflows—not OCR claims. I focus on what I have shipped, and make the boundaries of each contribution clear.</p>
                 </div>
             </div>
         </section>
 
-        <section class="proof-strip" aria-label="Core strengths">
-            <div class="container proof-grid">
-                <span>React.js</span>
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>AI Integrations</span>
-                <span>SEO</span>
-                <span>API Products</span>
-            </div>
-        </section>
-
-        <section class="section section-light" id="about">
-            <div class="container split-layout">
-                <div class="section-kicker reveal">
-                    <p class="eyebrow">About</p>
-                    <h2>Frontend polish, full-stack ownership, and product judgement.</h2>
-                    <figure class="about-portrait">
-                        <img src="images/user.png" alt="Neelesh Meena">
-                        <figcaption>
-                            Building production product surfaces across Hushh.ai and HushhTech.com.
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="section-body reveal">
-                    <p>
-                        I am a full-stack software engineer and IIT (ISM) Dhanbad graduate with 3+ years of professional
-                        experience shipping React, Next.js, TypeScript, Angular, and API-driven products. My work spans
-                        AI and data-sovereignty, investment tech, travel-tech, email marketing, financial workflows, and
-                        marketplace domains.
-                    </p>
-                    <p>
-                        I care deeply about responsive UI architecture, clean implementation, SEO readiness, Core Web
-                        Vitals, debugging, secure integrations, and distributed engineering collaboration. I also work
-                        comfortably with modern AI-assisted development workflows, prompt engineering, and LLM product
-                        integration.
-                    </p>
-
-                    <div class="quick-facts" role="group" aria-label="Quick facts">
-                        <div>
-                            <span>Current role</span>
-                            <strong>Tech Lead at Hushh.ai / Lead Engineer at HushhTech.com</strong>
-                        </div>
-                        <div>
-                            <span>Focus</span>
-                            <strong>AI, privacy, fintech, UX quality</strong>
-                        </div>
-                        <div>
-                            <span>Degree</span>
-                            <strong>B.Tech, IIT (ISM) Dhanbad</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-muted" id="experience">
+        <section class="section section-dark work-section" id="work">
             <div class="container">
-                <div class="section-heading reveal">
-                    <p class="eyebrow">Experience</p>
-                    <h2>Recent engineering work</h2>
+                <div class="section-heading work-heading">
+                    <div><p class="eyebrow">Selected work · Hushh</p><h2>Systems that connect<br>people, agents, and work.</h2></div>
+                    <p>Three production-focused stories across a consumer agent platform and an investor onboarding workflow.</p>
                 </div>
+                <div class="case-grid">
+                    <article class="case-card case-location">
+                        <div class="case-visual location-visual" aria-label="Illustration of a trusted location sharing flow">
+                            <span class="visual-label">ONE · LOCATION AGENT</span>
+                            <div class="map-lines" aria-hidden="true"></div>
+                            <div class="map-pin pin-start"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                            <div class="map-pin pin-end"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+                            <div class="route-line" aria-hidden="true"></div>
+                            <div class="map-chip chip-safe"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Safe arrival</div>
+                            <div class="map-chip chip-sos"><i class="fa-solid fa-bell" aria-hidden="true"></i> Check-in / SOS</div>
+                        </div>
+                        <div class="case-body">
+                            <div class="case-overline"><span>01 / Consumer AI</span><span>End-to-end ownership</span></div>
+                            <h3>One Location Agent</h3>
+                            <p class="case-summary">A privacy-first location experience inside One, bringing together a voice assistant, specialist agents, and trusted-person workflows.</p>
+                            <ul class="case-points">
+                                <li>Built across Next.js, Python/FastAPI, PostgreSQL, and Capacitor for web, iOS, and Android.</li>
+                                <li>Implemented consent-controlled encrypted sharing, trusted-recipient permissions, Check-In/SOS, and Pick Me Up/Safe Arrival flows.</li>
+                                <li>Connected global notifications and native FCM deep links to keep key actions useful across devices.</li>
+                            </ul>
+                            <div class="tag-list"><span>Next.js</span><span>FastAPI</span><span>PostgreSQL</span><span>Capacitor</span><span>FCM</span></div>
+                            <a class="case-link" href="https://github.com/hushh-labs/hushh-research/blob/main/docs/reference/one/one-agent-hierarchy.md" target="_blank" rel="noopener noreferrer">Explore the public One agent architecture <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
 
+                    <article class="case-card case-orchestra">
+                        <div class="case-visual orchestra-visual" aria-label="Illustration of agents coordinating through shared integrations">
+                            <span class="visual-label">AGENT ORCHESTRA</span>
+                            <div class="orchestra-flow">
+                                <div class="agent-node node-user"><i class="fa-regular fa-user" aria-hidden="true"></i><span>Person</span></div>
+                                <div class="flow-connector" aria-hidden="true"><span></span></div>
+                                <div class="agent-node node-hub"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i><span>Orchestrator</span></div>
+                                <div class="branch-connectors" aria-hidden="true"><span></span><span></span><span></span></div>
+                                <div class="agent-row"><div class="agent-node"><i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i><span>Location</span></div><div class="agent-node"><i class="fa-solid fa-bell" aria-hidden="true"></i><span>Notify</span></div><div class="agent-node"><i class="fa-solid fa-plug" aria-hidden="true"></i><span>MuleSoft</span></div></div>
+                            </div>
+                            <div class="visual-caption">A2A coordination · API-connected actions</div>
+                        </div>
+                        <div class="case-body">
+                            <div class="case-overline"><span>02 / AI systems</span><span>Cross-agent coordination</span></div>
+                            <h3>Agent Orchestra</h3>
+                            <p class="case-summary">A shared coordination layer for agent-to-agent workflows, connecting specialist capabilities with the APIs and product surfaces they need.</p>
+                            <ul class="case-points">
+                                <li>Built A2A workflows to let agents coordinate actions rather than operate as isolated chat experiences.</li>
+                                <li>Integrated MuleSoft APIs to support agent interactions and data exchange across systems.</li>
+                                <li>Designed the work to sit alongside One’s voice assistant and specialist agents.</li>
+                            </ul>
+                            <div class="tag-list"><span>A2A</span><span>Agent workflows</span><span>MuleSoft</span><span>API integration</span></div>
+                            <a class="case-link" href="https://github.com/hushh-labs/hushh-research" target="_blank" rel="noopener noreferrer">Browse public Hushh research <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="case-card case-onboarding">
+                        <div class="case-visual onboarding-visual" aria-label="Illustration of an investor onboarding workflow">
+                            <span class="visual-label">HUSHH TECH · INVESTOR ONBOARDING</span>
+                            <div class="onboarding-steps">
+                                <div class="onboarding-step is-complete"><span class="step-index"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span><b>Identity</b><small>Plaid + KYC</small></span><i class="fa-solid fa-chevron-right step-arrow" aria-hidden="true"></i></div>
+                                <div class="onboarding-step is-complete"><span class="step-index"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span><b>Documents</b><small>NDA generation + signing</small></span><i class="fa-solid fa-chevron-right step-arrow" aria-hidden="true"></i></div>
+                                <div class="onboarding-step is-current"><span class="step-index">03</span><span><b>Approval</b><small>Review + gated access</small></span><i class="fa-solid fa-lock step-arrow" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="visual-caption"><span class="mini-pulse" aria-hidden="true"></span> One connected onboarding journey</div>
+                        </div>
+                        <div class="case-body">
+                            <div class="case-overline"><span>03 / Workflow automation</span><span>Investor operations</span></div>
+                            <h3>Investor onboarding &amp; KYC</h3>
+                            <p class="case-summary">An end-to-end investor onboarding product that connects identity checks, signed agreements, approvals, and secure access.</p>
+                            <ul class="case-points">
+                                <li>Built the React/TypeScript + Supabase workflow with Plaid, KYC, NDA generation/signing, and DocuSign.</li>
+                                <li>Added approval tracking and gated access so onboarding state drives what investors can do next.</li>
+                                <li>Contributed to a <strong>40% increase in onboarding completion</strong>.</li>
+                            </ul>
+                            <div class="tag-list"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Plaid</span><span>DocuSign</span></div>
+                            <a class="case-link" href="https://www.hushh.ai/blogs/inside-hushh-tech-kyc-nda-flow" target="_blank" rel="noopener noreferrer">Read the public KYC / NDA workflow overview <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="disclosure-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><p>These are concise summaries of my contribution. Some implementation details are private; public links point to related architecture or product context. I have not represented this work as OCR/document extraction.</p></div>
+            </div>
+        </section>
+
+        <section class="section section-light experience-section" id="experience">
+            <div class="container">
+                <div class="section-heading"><div><p class="eyebrow eyebrow-dark">Experience</p><h2>Shipping, learning,<br>and improving the product.</h2></div><p>Roles, dates, and titles are retained as listed in my existing portfolio; highlights focus on shipped outcomes.</p></div>
                 <div class="timeline">
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
                         <div class="timeline-date">Jan 2024 - Present</div>
                         <div class="timeline-card">
-                            <div class="role-heading">
-                                <div>
-                                    <h3>Tech Lead / Lead Engineer / Full-Stack Software Engineer</h3>
-                                    <p>Hushh.ai + HushhTech.com - Kirkland, WA, Remote</p>
-                                </div>
-                                <span>AI / Data / Investment Tech</span>
-                            </div>
-                            <ul>
-                                <li>Lead development across Hushh.ai and HushhTech product surfaces, owning responsive
-                                    UI architecture, feature delivery, bug resolution, and UX quality.</li>
-                                <li>Ship production work for Agent KAI, brand onboarding, agent onboarding, MuleSoft
-                                    API integrations, and Plaid-powered financial flows.</li>
-                                <li>Improve SEO readiness by refining page structure, content hierarchy, metadata,
-                                    routing, and frontend implementation quality.</li>
-                                <li>Partner with product, design, developer docs, and engineering teams to translate
-                                    requirements into secure, scalable user experiences.</li>
+                            <div class="role-heading"><div><h3>Tech Lead / Lead Engineer / Full-Stack Software Engineer</h3><p>Hushh.ai + HushhTech.com · Kirkland, WA · Remote</p></div><span>Current</span></div>
+                            <ul class="experience-points">
+                                <li>Owned the Location Feature Agent across web and mobile; built privacy-conscious sharing, safety workflows, and notification journeys.</li>
+                                <li>Built A2A Agent Orchestra workflows and integrated MuleSoft APIs for agent interaction and data exchange.</li>
+                                <li>Delivered investor onboarding with Plaid, KYC, NDA and DocuSign workflows, approvals, and gated access; completion increased 40%.</li>
+                                <li>Improved SEO visibility by 85%, Core Web Vitals by 35%, and frontend bug-resolution time by 55% across shipped work.</li>
                             </ul>
-                            <div class="tech-stack">React.js, Next.js, TypeScript, Tailwind CSS, Chakra UI, Supabase,
-                                MongoDB, Prisma, Postman, SEO, AI Integrations</div>
                         </div>
                     </article>
-
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
                         <div class="timeline-date">Aug 2024 - Dec 2024</div>
-                        <div class="timeline-card">
-                            <div class="role-heading">
-                                <div>
-                                    <h3>Frontend Engineer, Freelance</h3>
-                                    <p>Zero3 Inc. - Tokyo, Japan, Remote</p>
-                                </div>
-                                <span>Product Onboarding</span>
-                            </div>
-                            <ul>
-                                <li>Delivered frontend features and production fixes across MASpider, Proful, and
-                                    Salesbond.</li>
-                                <li>Built onboarding flows covering first-time user journeys, form states, routing, and
-                                    UI validation.</li>
-                                <li>Created reusable React, Next.js, and TypeScript components to improve delivery speed
-                                    across products.</li>
-                            </ul>
-                            <div class="tech-stack">Next.js, React.js, TypeScript, Node.js</div>
-                        </div>
+                        <div class="timeline-card"><div class="role-heading"><div><h3>Frontend Engineer, Freelance</h3><p>Zero3 Inc. · Tokyo, Japan · Remote</p></div></div><p>Delivered 35+ screens, reduced the backlog by 70%, resolved 67 issues, and cut feedback turnaround by 50%.</p></div>
                     </article>
-
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
                         <div class="timeline-date">Oct 2023 - Jan 2024</div>
-                        <div class="timeline-card">
-                            <div class="role-heading">
-                                <div>
-                                    <h3>Software Engineer</h3>
-                                    <p>Tryp.com - Denmark, Remote</p>
-                                </div>
-                                <span>Travel-Tech</span>
-                            </div>
-                            <ul>
-                                <li>Developed core web app features for a travel platform helping users discover
-                                    instant destinations and package options.</li>
-                                <li>Fixed frontend issues, improved responsive UI behavior, and integrated API data
-                                    flows in a Next.js stack.</li>
-                            </ul>
-                            <div class="tech-stack">Next.js, React.js, TypeScript</div>
-                        </div>
+                        <div class="timeline-card"><div class="role-heading"><div><h3>Software Engineer</h3><p>Tryp.com · Denmark · Remote</p></div></div><p>Built 11 React/Next.js screens, improving booking completion by 45% and reducing bugs by 80%.</p></div>
                     </article>
-
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
                         <div class="timeline-date">Feb 2023 - Oct 2023</div>
-                        <div class="timeline-card">
-                            <div class="role-heading">
-                                <div>
-                                    <h3>Software Engineer</h3>
-                                    <p>Mailmodo - Bengaluru, India, Remote</p>
-                                </div>
-                                <span>Email Marketing</span>
-                            </div>
-                            <ul>
-                                <li>Built and maintained MM-Admin interfaces for internal data organization and
-                                    operational workflows.</li>
-                                <li>Worked with the Workflow and Experience team to resolve issues, ship frontend
-                                    features, and improve UX consistency.</li>
-                                <li>Supported Next.js, JavaScript, and Shopify modules with responsive UI updates and
-                                    cross-browser checks.</li>
-                            </ul>
-                            <div class="tech-stack">Next.js, React.js, JavaScript, Shopify</div>
-                        </div>
+                        <div class="timeline-card"><div class="role-heading"><div><h3>Software Engineer</h3><p>Mailmodo · Bengaluru, India · Remote</p></div></div><p>Delivered 17 screens and resolved 88 issues; improved admin efficiency by 35% and reduced workflow bugs by 40%.</p></div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section section-dark compact-section" aria-label="Additional experience">
-            <div class="container mini-grid">
-                <article class="mini-card reveal">
-                    <i class="fa-solid fa-building-user" aria-hidden="true"></i>
-                    <h3>Yahshua Payroll Solutions</h3>
-                    <p>Built HRIS and job-posting features from Figma designs with Next.js, Redux, and Node.js.</p>
-                </article>
-                <article class="mini-card reveal">
-                    <i class="fa-solid fa-landmark" aria-hidden="true"></i>
-                    <h3>Student Gymkhana, IIT (ISM)</h3>
-                    <p>Built admin and user portals with APIs for voting, notices, and results.</p>
-                </article>
-                <article class="mini-card reveal">
-                    <i class="fa-solid fa-medal" aria-hidden="true"></i>
-                    <h3>Achievements</h3>
-                    <p>Top 2% among IIT-JEE candidates. Sports Secretary and Cabinet Member at IIT (ISM) Dhanbad.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section section-light" id="skills">
+        <section class="section section-muted strengths-section" id="approach">
             <div class="container">
-                <div class="section-heading reveal">
-                    <p class="eyebrow">Skills</p>
-                    <h2>Technical stack</h2>
+                <div class="section-heading"><div><p class="eyebrow eyebrow-dark">Strengths</p><h2>Depth where the product<br>needs it most.</h2></div><p>A focused view of the stack and engineering work I use in production—not an exhaustive keyword inventory.</p></div>
+                <div class="strength-grid">
+                    <article class="strength-card"><span class="strength-index">01</span><i class="fa-solid fa-cubes" aria-hidden="true"></i><h3>Product interfaces</h3><p>Responsive product experiences, complex state, accessible interactions, and mobile-friendly delivery.</p><div class="tag-list"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Capacitor</span></div></article>
+                    <article class="strength-card"><span class="strength-index">02</span><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><h3>Agents &amp; orchestration</h3><p>Agent-to-agent workflows, specialist agent surfaces, voice-assistant integrations, and API-driven actions.</p><div class="tag-list"><span>A2A workflows</span><span>Python</span><span>FastAPI</span><span>MuleSoft</span></div></article>
+                    <article class="strength-card"><span class="strength-index">03</span><i class="fa-solid fa-user-shield" aria-hidden="true"></i><h3>Workflow &amp; identity</h3><p>Consent-aware product flows that connect onboarding, identity, agreements, approvals, and permissions.</p><div class="tag-list"><span>Supabase</span><span>PostgreSQL</span><span>Plaid</span><span>DocuSign</span></div></article>
+                    <article class="strength-card"><span class="strength-index">04</span><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><h3>Production quality</h3><p>Performance, monitoring, testing, documentation, and pragmatic improvements to how teams ship.</p><div class="tag-list"><span>Core Web Vitals</span><span>Testing</span><span>CI/CD</span><span>Privacy</span></div></article>
                 </div>
-
-                <div class="skills-grid">
-                    <article class="skill-card skill-card-featured reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
-                        <h3>Strongest Stack</h3>
-                        <div class="tag-list">
-                            <span>Next.js</span>
-                            <span>React.js</span>
-                            <span>TypeScript</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-                            <span>Tailwind CSS</span>
-                            <span>Chakra UI</span>
-                            <span>Full-Stack Development</span>
-                            <span>API Integration</span>
-                            <span>REST APIs</span>
-                            <span>SEO Optimization</span>
-                            <span>Web Performance</span>
-                            <span>Web Security</span>
-                            <span>AI Agents</span>
-                            <span>Gemini API</span>
-                            <span>LLM Integration</span>
-                            <span>Supabase</span>
-                            <span>Firebase</span>
-                            <span>Google Cloud Platform</span>
-                            <span>Docker</span>
-                            <span>GitHub Actions</span>
-                            <span>CI/CD</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div>
-                        <h3>Frontend Engineering</h3>
-                        <div class="tag-list">
-                            <span>React.js</span>
-                            <span>Next.js App Router</span>
-                            <span>React Server Components</span>
-                            <span>Client Components</span>
-                            <span>JSX/TSX</span>
-                            <span>TypeScript</span>
-                            <span>JavaScript ES6+</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>Tailwind CSS</span>
-                            <span>Chakra UI</span>
-                            <span>Styled Components</span>
-                            <span>Emotion</span>
-                            <span>Responsive Web Design</span>
-                            <span>Mobile-first UI</span>
-                            <span>Frontend Architecture</span>
-                            <span>Component Architecture</span>
-                            <span>Design Systems</span>
-                            <span>Dynamic Routing</span>
-                            <span>SEO Metadata</span>
-                            <span>Open Graph Metadata</span>
-                            <span>Twitter Cards</span>
-                            <span>Canonical URLs</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></div>
-                        <h3>UI, UX and Motion</h3>
-                        <div class="tag-list">
-                            <span>UI Engineering</span>
-                            <span>UX Implementation</span>
-                            <span>Design System Tokens</span>
-                            <span>Accessibility-aware UI</span>
-                            <span>Cross-device Layouts</span>
-                            <span>GSAP</span>
-                            <span>Lottie Animations</span>
-                            <span>Swiper.js</span>
-                            <span>Three.js</span>
-                            <span>React Three Fiber</span>
-                            <span>React Three Drei</span>
-                            <span>QR Code UI</span>
-                            <span>PDF Rendering</span>
-                            <span>Icon Systems</span>
-                            <span>FontAwesome</span>
-                            <span>Lucide React</span>
-                            <span>React Icons</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-code-branch" aria-hidden="true"></i></div>
-                        <h3>Backend and APIs</h3>
-                        <div class="tag-list">
-                            <span>Node.js</span>
-                            <span>Next.js API Routes</span>
-                            <span>Serverless Route Handlers</span>
-                            <span>Serverless APIs</span>
-                            <span>REST APIs</span>
-                            <span>FastAPI</span>
-                            <span>Python</span>
-                            <span>API Integration</span>
-                            <span>Authentication</span>
-                            <span>Authorization</span>
-                            <span>API Key Authentication</span>
-                            <span>Postman</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></div>
-                        <h3>Cloud and DevOps</h3>
-                        <div class="tag-list">
-                            <span>Google Cloud Platform</span>
-                            <span>Cloud Run</span>
-                            <span>Cloud Build</span>
-                            <span>Artifact Registry</span>
-                            <span>Secret Manager</span>
-                            <span>Cloud SQL PostgreSQL</span>
-                            <span>Cloud Tasks</span>
-                            <span>Docker</span>
-                            <span>Standalone Next.js Deployment</span>
-                            <span>GitHub Actions</span>
-                            <span>CI/CD</span>
-                            <span>UAT Deployment</span>
-                            <span>Production Deployment</span>
-                            <span>SHA-based Release Promotion</span>
-                            <span>Environment Parity Checks</span>
-                            <span>Smoke Testing</span>
-                            <span>Bash Scripting</span>
-                            <span>Python Automation</span>
-                            <span>Node.js Automation Scripts</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
-                        <h3>Databases and Auth</h3>
-                        <div class="tag-list">
-                            <span>Supabase</span>
-                            <span>Supabase Auth</span>
-                            <span>Supabase Service Role APIs</span>
-                            <span>Firebase Auth</span>
-                            <span>Firebase Admin SDK</span>
-                            <span>Session Cookies</span>
-                            <span>Google OAuth</span>
-                            <span>Google Sign-In</span>
-                            <span>Apple Sign-In</span>
-                            <span>MFA Flows</span>
-                            <span>Google OIDC</span>
-                            <span>Cloud SQL</span>
-                            <span>PostgreSQL</span>
-                            <span>SQLite</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
-                        <h3>AI and Agentic Systems</h3>
-                        <div class="tag-list">
-                            <span>AI Agents</span>
-                            <span>LLM Product Integration</span>
-                            <span>Gemini API</span>
-                            <span>Google GenAI</span>
-                            <span>AI Search</span>
-                            <span>Web Search APIs</span>
-                            <span>Identity Exploration Systems</span>
-                            <span>OSINT-style Enrichment</span>
-                            <span>Personal Data Agents</span>
-                            <span>Agent API Proxying</span>
-                            <span>Developer API Portals</span>
-                            <span>Prompt Engineering</span>
-                            <span>Agentic Workflows</span>
-                            <span>Structured AI Responses</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i></div>
-                        <h3>Testing and Quality</h3>
-                        <div class="tag-list">
-                            <span>Jest</span>
-                            <span>React Testing Library</span>
-                            <span>Testing Library User Event</span>
-                            <span>jsdom</span>
-                            <span>Pytest</span>
-                            <span>Playwright</span>
-                            <span>Axe Core</span>
-                            <span>ESLint</span>
-                            <span>TypeScript Type Checking</span>
-                            <span>NPM Audit</span>
-                            <span>Gitleaks Secret Scanning</span>
-                            <span>Route Manifest Testing</span>
-                            <span>SEO Audits</span>
-                            <span>Security Audits</span>
-                            <span>Brand Audits</span>
-                            <span>Shell Audits</span>
-                            <span>Runtime Smoke Tests</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-                        <h3>Security and Performance</h3>
-                        <div class="tag-list">
-                            <span>Content Security Policy</span>
-                            <span>HSTS</span>
-                            <span>Security Headers</span>
-                            <span>Referrer Policy</span>
-                            <span>Permissions Policy</span>
-                            <span>Cross-Origin Policies</span>
-                            <span>Secret Management</span>
-                            <span>OAuth Branding Verification</span>
-                            <span>Runtime Hardening</span>
-                            <span>Dependency Security</span>
-                            <span>Web Vitals</span>
-                            <span>Performance Auditing</span>
-                            <span>Image Optimization</span>
-                            <span>Next.js Optimization</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card reveal">
-                        <div class="skill-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
-                        <h3>Product, Content and Documentation</h3>
-                        <div class="tag-list">
-                            <span>Product Engineering</span>
-                            <span>Technical Writing</span>
-                            <span>Developer Documentation</span>
-                            <span>Runbooks</span>
-                            <span>Architecture Documentation</span>
-                            <span>Operations Documentation</span>
-                            <span>Blog Platform Development</span>
-                            <span>Search Indexing</span>
-                            <span>Product Marketing Pages</span>
-                            <span>Landing Pages</span>
-                            <span>Product Pages</span>
-                            <span>Developer Portals</span>
-                            <span>Legal Pages</span>
-                            <span>Careers Pages</span>
-                            <span>Contact Forms</span>
-                            <span>Calendly Integration</span>
-                            <span>EmailJS Integration</span>
-                            <span>Cloudinary Integration</span>
-                            <span>Apple Wallet Pass API Integration</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-muted" id="projects">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <p class="eyebrow">Projects</p>
-                    <h2>Selected work</h2>
-                </div>
-
-                <div class="project-grid">
-                    <article class="project-card featured reveal">
-                        <img src="images/work-1.webp" alt="E-commerce website preview">
-                        <div class="project-content">
-                            <span class="project-type">Angular / TypeScript / Node.js</span>
-                            <h3>E-Commerce Website</h3>
-                            <p>Fully responsive shopping experience with authentication, category browsing, fashion blog,
-                                product detail pages, checkout, billing, and order summary flows.</p>
-                            <a href="https://multikart-eshop-fhiq.vercel.app/" target="_blank" rel="noopener">
-                                View project
-                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <img src="images/work-3.jpg" alt="Customer tracking system preview">
-                        <div class="project-content">
-                            <span class="project-type">Angular / Firebase / Bootstrap</span>
-                            <h3>Customer Tracking System</h3>
-                            <p>CRUD single-page app with user registration, task and customer management, and POST, GET,
-                                PUT, and DELETE workflows.</p>
-                            <a href="https://angular-crud-operation.vercel.app/" target="_blank" rel="noopener">
-                                View project
-                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <img src="images/work-6.jpg" alt="GitHub finder app preview">
-                        <div class="project-content">
-                            <span class="project-type">React / Next.js / GitHub API</span>
-                            <h3>GitHub Finder</h3>
-                            <p>Responsive app for searching GitHub users and repositories, then presenting API data in a
-                                clean, scannable interface.</p>
-                            <a href="https://github-profile-finder-silk-eta.vercel.app/" target="_blank" rel="noopener">
-                                View project
-                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <img src="images/work-4.png" alt="Sorting visualizer preview">
-                        <div class="project-content">
-                            <span class="project-type">JavaScript / Algorithms</span>
-                            <h3>Sorting Visualizer</h3>
-                            <p>Interactive algorithm visualizer with array sizing, sorting speed controls, and animated
-                                comparisons.</p>
-                            <a href="https://sorting-vizualizer.netlify.app/" target="_blank" rel="noopener">
-                                View project
-                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <img src="images/work10.webp" alt="Shopping cart app preview">
-                        <div class="project-content">
-                            <span class="project-type">React / Commerce UI</span>
-                            <h3>Shopping Cart Website</h3>
-                            <p>SPA for browsing products, filtering by type, adding items to cart, and reviewing cart
-                                details.</p>
-                            <a href="https://add-to-cart-e-commerce-project.vercel.app/products" target="_blank"
-                                rel="noopener">
-                                View project
-                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-dark" id="contact">
-            <div class="container contact-grid">
-                <div class="contact-copy reveal">
-                    <p class="eyebrow">Contact</p>
-                    <h2>Let us build something sharp.</h2>
-                    <p>
-                        I am open to strong full-stack, frontend-heavy, and AI product engineering opportunities across
-                        remote-first teams.
-                    </p>
-
-                    <div class="contact-list">
-                        <a href="mailto:damrianeelesh@gmail.com">
-                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                            damrianeelesh@gmail.com
-                        </a>
-                        <a href="tel:+917023488011">
-                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
-                            +91&nbsp;7023488011
-                        </a>
-                        <a href="https://www.linkedin.com/in/neelesh-meena-73b07b1a0/" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/DamriaNeelesh" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            GitHub
-                        </a>
+                <details class="earlier-work">
+                    <summary>Earlier independent builds <span>Open to view</span></summary>
+                    <div class="earlier-work-grid">
+                        <a href="https://multikart-eshop-fhiq.vercel.app/" target="_blank" rel="noopener noreferrer"><b>E-commerce experience</b><span>Catalog, product pages, cart, and checkout UI</span></a>
+                        <a href="https://angular-crud-operation.vercel.app/" target="_blank" rel="noopener noreferrer"><b>Customer tracking system</b><span>CRUD flows, registration, and task/customer management</span></a>
+                        <a href="https://github-profile-finder-silk-eta.vercel.app/" target="_blank" rel="noopener noreferrer"><b>GitHub profile finder</b><span>Search and present GitHub profile and repository data</span></a>
+                        <a href="https://sorting-vizualizer.netlify.app/" target="_blank" rel="noopener noreferrer"><b>Sorting visualizer</b><span>Interactive algorithm visualization with controls</span></a>
                     </div>
-                </div>
+                </details>
+            </div>
+        </section>
 
-                <form class="contact-form reveal" action="https://formsubmit.co/damrianeelesh@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New portfolio inquiry for Neelesh Meena">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
-
-                    <label for="name">Name</label>
-                    <input id="name" type="text" name="name" placeholder="Your name" autocomplete="name" required>
-
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email"
-                        required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Tell me about the role or project"
-                        required></textarea>
-
-                    <button class="button button-primary" type="submit">
-                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                        Send Message
-                    </button>
-                </form>
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+                <div><p class="eyebrow">Have a thoughtful problem to solve?</p><h2>Let’s build something<br>useful and dependable.</h2><p class="contact-lede">Interested in product engineering, AI-agent experiences, or workflow automation? Send me a note and a little context.</p></div>
+                <div class="contact-actions"><a class="button button-primary" href="mailto:damrianeelesh@gmail.com?subject=Portfolio%20conversation">Email Neelesh <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="button button-outline-light" href="https://www.linkedin.com/in/neelesh-meena-73b07b1a0/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <i class="fa-brands fa-linkedin" aria-hidden="true"></i></a><a class="resume-link" href="images/my-cv.pdf" download="Neelesh_Meena_Resume.pdf">Download the latest resume <i class="fa-solid fa-download" aria-hidden="true"></i></a></div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container footer-content">
-            <p>Copyright <span id="year"></span> Neelesh Meena. Built for modern product teams.</p>
-            <a href="https://drive.google.com/file/d/1eXek2VdbyVB7iNBrR4iYU_LT7NO3hDw6/view?usp=sharing"
-                target="_blank" rel="noopener">View Resume</a>
-        </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-content"><span>© <span id="current-year">2026</span> Neelesh Meena</span><span>Built with care · <a href="#top">Back to top ↑</a></span></div></footer>
 
     <script>
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navigation = document.querySelector(".site-nav");
-        const navLinks = document.querySelectorAll(".site-nav a");
-        const year = document.getElementById("year");
-
-        year.textContent = new Date().getFullYear();
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen = navigation.classList.toggle("is-open");
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
-            menuToggle.innerHTML = isOpen
-                ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
-                : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.querySelector('.site-nav');
+        menuToggle.addEventListener('click', () => {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!isOpen));
+            menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
+            siteNav.classList.toggle('is-open', !isOpen);
         });
-
-        navLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                navigation.classList.remove("is-open");
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
-            });
+        siteNav.addEventListener('click', (event) => {
+            if (event.target.closest('a')) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Open navigation');
+                siteNav.classList.remove('is-open');
+            }
         });
-
-        const reveals = document.querySelectorAll(".reveal");
-
-        if ("IntersectionObserver" in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.12 });
-
-            reveals.forEach((item) => observer.observe(item));
-        } else {
-            reveals.forEach((item) => item.classList.add("is-visible"));
-        }
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
-
 </html>
